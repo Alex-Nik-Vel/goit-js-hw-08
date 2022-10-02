@@ -28,7 +28,7 @@ function onFormSubmit(evt) {
     if (!formData.email || !formData.message) {
         localStorage.clear();
         formData = {};
-        return alert('email or password not entered'); 
+        return alert('email or message not entered'); 
     } else {
         console.log('ELSE formData.email=',formData.email);
         console.log('Else formData.message=',formData.message);
