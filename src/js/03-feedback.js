@@ -30,8 +30,8 @@ function onFormSubmit(evt) {
         formData = {};
         return alert('email or message not entered'); 
     } else {
-        console.log('ELSE formData.email=',formData.email);
-        console.log('Else formData.message=',formData.message);
+        // console.log('ELSE formData.email=',formData.email);
+        // console.log('Else formData.message=',formData.message);
         console.log(formData); 
     };
     
@@ -45,16 +45,16 @@ function onInput(evt) {
 }
 
 function formDataLocalStorage() {
-    localStorageValue = localStorage.getItem(localStorageFormKey) 
+    const localStorageValue = localStorage.getItem(localStorageFormKey) 
     const formData = JSON.parse(localStorageValue);
-    console.log('formData', formData);
+    // console.log('formData', formData);
    
     if (formData) {
       email.value = formData.email || '';
       message.value = formData.message || '';      
   } 
-    console.log('formData.email', email.value);
-    console.log('formData.message', message.value);
+    // console.log('formData.email', email.value);
+    // console.log('formData.message', message.value);
 };
 
 
